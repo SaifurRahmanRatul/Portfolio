@@ -4,8 +4,8 @@ Welcome to my professional portfolio website! I am an aspiring front-end web dev
 
 ## About Me
 - **Name**: Md. Saifur Rahman
-- **Location**: [Your City, Country]
-- **Email**: saifur.rahman@example.com
+- **Location**: Uttara, Dhaka
+- **Email**: saifurrahmanratul19@gmail.com
 - **GitHub**: [github.com/SaifurRahmanRatul](https://github.com/SaifurRahmanRatul)
 - **LinkedIn**: [linkedin.com/in/saifur-rahman](https://linkedin.com/in/saifur-rahman)
 
