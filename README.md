@@ -58,5 +58,3 @@ This portfolio is a static website hosted on GitHub Pages. The source code is av
 - Refactor the project into a React application to leverage component-based development.
 - Deploy additional projects showcasing my growing skill set.
 
-## Getting Started
-1. Clone the repository:
