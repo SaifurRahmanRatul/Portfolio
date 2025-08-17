@@ -11,18 +11,23 @@ const startYear = 2023;
 let experienceYears = currentYear - startYear;
 console.log("Years of Experience: " + experienceYears);
 
-// Conditional check
+// Conditional check with debug
+console.log("Debug: Before if, experienceYears = " + experienceYears);
 if (experienceYears > 1) {
+    console.log("Condition true, experienceYears = " + experienceYears);
     console.log(fullName + " is an Experienced Developer!");
 } else {
+    console.log("Condition false, experienceYears = " + experienceYears);
     console.log(fullName + " is a Junior Developer!");
 }
 
-// Loop through skills
+// Loop through skills with debug
 const skills = ["HTML5", "CSS3", "JavaScript", "React"];
+console.log("Debug: Before loop, skills length = " + skills.length);
 for (let i = 0; i < skills.length; i++) {
     console.log("Skill " + (i + 1) + ": " + skills[i]);
 }
+console.log("Debug: After loop");
 
 // Show welcome alert on page load
 window.addEventListener('load', () => {
