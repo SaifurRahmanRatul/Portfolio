@@ -23,8 +23,10 @@ if (experienceYears > 1) {
 
 // Loop through skills with debug
 const skills = ["HTML5", "CSS3", "JavaScript", "React"];
+console.log("Debug: Skills array = " + skills);
 console.log("Debug: Before loop, skills length = " + skills.length);
 for (let i = 0; i < skills.length; i++) {
+    console.log("Debug: Iteration " + i + ", skills[i] = " + skills[i]);
     console.log("Skill " + (i + 1) + ": " + skills[i]);
 }
 console.log("Debug: After loop");
