@@ -30,6 +30,33 @@ const contactInfo = {
     github: "https://github.com/SaifurRahmanRatul"
 };
 
+// Object for education
+const education = {
+    degree: "BSc in Computer Science",
+    institution: "Daffodil International University",
+    year: 2025
+};
+
+// Log the education object
+console.log("Education Details: ", education);
+
+// Function to display skills
+function displaySkills() {
+    const skills = ["HTML5", "CSS3", "JavaScript", "React"]; // Ensure this is here
+    const skillList = document.getElementById("skillList");
+    if (skillList) { // Debug: Check if element exists
+        skillList.innerHTML = ""; // Clear existing content
+        for (let i = 0; i < skills.length; i++) {
+            const skillElement = document.createElement("div");
+            skillElement.textContent = "Skill " + (i + 1) + ": " + skills[i];
+            skillElement.className = "card";
+            skillList.appendChild(skillElement);
+        }
+    } else {
+        console.error("SkillList element not found!");
+    }
+}
+
 // Function to log skills from array
 function logSkills() {
     for (let i = 0; i < skills.length; i++) {
@@ -37,9 +64,10 @@ function logSkills() {
     }
 }
 
-// Event listener for page load (calls function)
+// Event listener for page load
 window.addEventListener('load', () => {
-    logSkills();
+    displaySkills(); // Ensure this calls the function
+    logSkills();    // Keep logging for console
     alert("Welcome to my portfolio! I'm " + fullName + " with " + experienceYears + " years in tech.");
 });
 
@@ -51,4 +79,16 @@ document.getElementById('toggleContact').addEventListener('click', () => {
     } else {
         contactDiv.style.display = 'none';
     }
+});
+
+// Event listener for mouseover on header
+document.getElementById('header').addEventListener('mouseover', () => {
+    console.log("Mouseover detected");
+    document.getElementById('header').style.color = '#ff5733';
+});
+
+// Event listener for mouseout on header
+document.getElementById('header').addEventListener('mouseout', () => {
+    console.log("Mouseout detected");
+    document.getElementById('header').style.color = '#fff';
 });
