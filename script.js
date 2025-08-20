@@ -18,7 +18,7 @@ if (experienceYears > 1) {
     console.log(fullName + " is a Junior Developer!");
 }
 
-// Array of skills
+// Array of skills (global scope)
 const skills = ["HTML5", "CSS3", "JavaScript", "React"];
 
 // Object for contact
@@ -42,53 +42,52 @@ console.log("Education Details: ", education);
 
 // Function to display skills
 function displaySkills() {
-    const skills = ["HTML5", "CSS3", "JavaScript", "React"]; // Ensure this is here
     const skillList = document.getElementById("skillList");
-    if (skillList) { // Debug: Check if element exists
+    if (skillList) {
         skillList.innerHTML = ""; // Clear existing content
-        for (let i = 0; i < skills.length; i++) {
+        skills.forEach((skill, index) => {
             const skillElement = document.createElement("div");
-            skillElement.textContent = "Skill " + (i + 1) + ": " + skills[i];
+            skillElement.textContent = `Skill ${index + 1}: ${skill}`;
             skillElement.className = "card";
             skillList.appendChild(skillElement);
-        }
+        });
     } else {
-        console.error("SkillList element not found!");
+        console.error("SkillList element not found in DOM!");
     }
 }
 
 // Function to log skills from array
 function logSkills() {
-    for (let i = 0; i < skills.length; i++) {
-        console.log("Skill " + (i + 1) + ": " + skills[i]);
-    }
+    skills.forEach((skill, index) => {
+        console.log(`Skill ${index + 1}: ${skill}`);
+    });
 }
 
 // Event listener for page load
 window.addEventListener('load', () => {
-    displaySkills(); // Ensure this calls the function
-    logSkills();    // Keep logging for console
+    displaySkills();
+    logSkills();
     alert("Welcome to my portfolio! I'm " + fullName + " with " + experienceYears + " years in tech.");
 });
 
 // Event listener for button click (toggle contact)
 document.getElementById('toggleContact').addEventListener('click', () => {
-    let contactDiv = document.getElementById('contactDetails');
-    if (contactDiv.style.display === 'none') {
-        contactDiv.style.display = 'block';
+    const contactDiv = document.getElementById('contactDetails');
+    if (contactDiv) {
+        contactDiv.style.display = contactDiv.style.display === 'none' ? 'block' : 'none';
     } else {
-        contactDiv.style.display = 'none';
+        console.error("ContactDetails element not found!");
     }
 });
 
 // Event listener for mouseover on header
 document.getElementById('header').addEventListener('mouseover', () => {
     console.log("Mouseover detected");
-    document.getElementById('header').style.color = '#ff5733';
+    document.getElementById('header').style.setProperty('color', '#ff5733', 'important'); // Override CSS
 });
 
 // Event listener for mouseout on header
 document.getElementById('header').addEventListener('mouseout', () => {
     console.log("Mouseout detected");
-    document.getElementById('header').style.color = '#fff';
+    document.getElementById('header').style.setProperty('color', '#fff', 'important');
 });

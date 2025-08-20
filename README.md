@@ -1,9 +1,9 @@
 # Md. Saifur Rahman - Professional Portfolio
 
-Welcome to my professional portfolio website! I am Md. Saifur Rahman, an aspiring Front-end Web Developer with a strong foundation in web technologies and administrative expertise. This portfolio showcases my skills, experience, and ongoing journey in the tech and education sectors. The website is built using HTML5, CSS3, and is designed to be responsive and user-friendly.
+Welcome to my professional portfolio website! I am Md. Saifur Rahman, an aspiring Front-end Web Developer with a strong foundation in web technologies and administrative expertise. This portfolio showcases my skills, experience, and ongoing journey in the tech and education sectors. The website is built using HTML5, CSS3, and JavaScript, with plans for React integration in future updates.
 
 ## About Me
-I am currently working on Micro-credentials at DIU Micro-Credentials Academy and pursuing a career as a Front-end Web Developer. My background combines knowledge in administration and web development, enabling me to create efficient and innovative digital solutions. Check out my profile image and detailed bio on the [About section](#) of the website.
+I am currently working on Micro-credentials at DIU Micro-Credentials Academy and pursuing a career as a Front-end Web Developer. My background combines knowledge in administration and web development, enabling me to create efficient and innovative digital solutions. Check out my profile image and detailed bio on the [About section](#about) of the website.
 
 ## Work Experience
 - **Assistant Administrative Officer**  
@@ -18,7 +18,7 @@ I am currently working on Micro-credentials at DIU Micro-Credentials Academy and
 - HTML5
 - CSS3
 - JavaScript
-- React
+- React (planned)
 
 ### Administrative Skills
 - Course Management
@@ -51,10 +51,18 @@ I am currently working on Micro-credentials at DIU Micro-Credentials Academy and
 - **GitHub**: [https://github.com/SaifurRahmanRatul](https://github.com/SaifurRahmanRatul)
 
 ## Project Details
-This portfolio is a static website hosted on GitHub Pages. The source code is available in this repository, written in HTML, CSS, and planned to include JavaScript and React for enhanced interactivity in future updates. Feel free to explore the code, suggest improvements, or collaborate!
+This portfolio is a static website hosted on GitHub Pages. The source code is available in this repository, written in HTML, CSS, and JavaScript. Dynamic features (e.g., skills display) are implemented with JavaScript, with plans to refactor into a React application.
+
+### Setup Instructions
+1. Clone the repository: `git clone https://github.com/SaifurRahmanRatul/Portfolio.git`
+2. Navigate to the folder: `cd Portfolio`
+3. Open `index.html` in a web browser or use a local server (e.g., Live Server in VS Code) for full functionality.
+4. Ensure `style.css` and `script.js` are in the same directory as `index.html`.
 
 ## Future Plans
-- Enhance the website with JavaScript for dynamic features like smooth scrolling and form validation.
+- Enhance the website with JavaScript for dynamic features like form validation and smooth scrolling.
 - Refactor the project into a React application to leverage component-based development.
 - Deploy additional projects showcasing my growing skill set.
 
+## Contributions
+Feel free to explore the code, suggest improvements, or collaborate! Open an issue or submit a pull request.
