@@ -11,27 +11,27 @@ const startYear = 2023;
 let experienceYears = currentYear - startYear;
 console.log("Years of Experience: " + experienceYears);
 
-// Conditional check with debug
-console.log("Debug: Before if, experienceYears = " + experienceYears);
+// Conditional check
 if (experienceYears > 1) {
-    console.log("Condition true, experienceYears = " + experienceYears);
     console.log(fullName + " is an Experienced Developer!");
 } else {
-    console.log("Condition false, experienceYears = " + experienceYears);
     console.log(fullName + " is a Junior Developer!");
 }
 
-// Loop through skills with debug
-const skills = ["HTML5", "CSS3", "JavaScript", "React"];
-console.log("Debug: Skills array = " + skills);
-console.log("Debug: Before loop, skills length = " + skills.length);
-for (let i = 0; i < skills.length; i++) {
-    console.log("Debug: Iteration " + i + ", skills[i] = " + skills[i]);
-    console.log("Skill " + (i + 1) + ": " + skills[i]);
+// Function to display skills
+function displaySkills() {
+    const skills = ["HTML5", "CSS3", "JavaScript", "React"];
+    const skillList = document.getElementById("skillList");
+    for (let i = 0; i < skills.length; i++) {
+        const skillElement = document.createElement("div");
+        skillElement.textContent = "Skill " + (i + 1) + ": " + skills[i];
+        skillElement.className = "card";
+        skillList.appendChild(skillElement);
+    }
 }
-console.log("Debug: After loop");
 
-// Show welcome alert on page load
+// Call the function on page load
 window.addEventListener('load', () => {
+    displaySkills();
     alert("Welcome to my portfolio! I'm " + fullName + " with " + experienceYears + " years in tech.");
 });
